@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SoqoUru5Q4N5UAW60VrXkBlQwlhu/a1JV6TiyzHnspzjneW9DMTfi5W5+7+f5wi+5lOecWl/h3n4fCkQRXjDhA==",
+  "dgSpecHash": "kENn+yOshbN7UbWv4VzdOvvy/nf3tAPoeb0HxQJGBKETY5npjlFbQe5PR6h6483VCK/H5WDrGKWZvRF9jCe7SA==",
   "success": true,
-  "projectFilePath": "/Users/haseebahmed/Desktop/New Practice/TaskManagement-WebClient/TaskManagement-WebClient/TaskManagement-WebClient.csproj",
+  "projectFilePath": "/Users/haseebahmed/Desktop/dotNet Practice/TaskManagement/TaskManagement-WebClient/TaskManagement-WebClient/TaskManagement-WebClient.csproj",
   "expectedPackageFiles": [
     "/Users/haseebahmed/.nuget/packages/microsoft.aspnet.webapi.client/5.2.9/microsoft.aspnet.webapi.client.5.2.9.nupkg.sha512",
     "/Users/haseebahmed/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",

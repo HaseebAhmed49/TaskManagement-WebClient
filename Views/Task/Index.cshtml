@@ -33,8 +33,8 @@
                     </td>
                     <td class="align-middle text-center">
                         <a class="btn btn-outline-primary" asp-route-id="@item.id" asp-controller="Task" asp-action="Edit"><i class="bi bi-pencil-square"></i>Edit</a>
-                        <a class="btn btn-outline-primary" asp-route-id="@item.id" asp-controller="Task" asp-action="Details"><i class="bi bi-eye"></i>Details</a>
-                        <a class="btn btn-outline-primary" asp-route-id="@item.id" asp-controller="Task" asp-action="Delete"><i class="bi bi-trash"></i>Delete</a>
+                        <a class="btn btn-outline-success" asp-route-id="@item.id" asp-controller="Task" asp-action="Details"><i class="bi bi-eye"></i>Details</a>
+                        <a class="btn btn-outline-danger" asp-route-id="@item.id" asp-controller="Task" asp-action="Delete"><i class="bi bi-trash"></i>Delete</a>
                     </td>
                 </tr>
                 }
@@ -42,3 +42,5 @@
         </table>
     </div>
 </div>
+
+@await Html.PartialAsync("_CreateItem","Task");

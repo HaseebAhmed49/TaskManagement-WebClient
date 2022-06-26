@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/haseebahmed/Desktop/New Practice/TaskManagement-WebClient/TaskManagement-WebClient/TaskManagement-WebClient.csproj": {}
+    "/Users/haseebahmed/Desktop/dotNet Practice/TaskManagement/TaskManagement-WebClient/TaskManagement-WebClient/TaskManagement-WebClient.csproj": {}
   },
   "projects": {
-    "/Users/haseebahmed/Desktop/New Practice/TaskManagement-WebClient/TaskManagement-WebClient/TaskManagement-WebClient.csproj": {
+    "/Users/haseebahmed/Desktop/dotNet Practice/TaskManagement/TaskManagement-WebClient/TaskManagement-WebClient/TaskManagement-WebClient.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/haseebahmed/Desktop/New Practice/TaskManagement-WebClient/TaskManagement-WebClient/TaskManagement-WebClient.csproj",
+        "projectUniqueName": "/Users/haseebahmed/Desktop/dotNet Practice/TaskManagement/TaskManagement-WebClient/TaskManagement-WebClient/TaskManagement-WebClient.csproj",
         "projectName": "TaskManagement-WebClient",
-        "projectPath": "/Users/haseebahmed/Desktop/New Practice/TaskManagement-WebClient/TaskManagement-WebClient/TaskManagement-WebClient.csproj",
+        "projectPath": "/Users/haseebahmed/Desktop/dotNet Practice/TaskManagement/TaskManagement-WebClient/TaskManagement-WebClient/TaskManagement-WebClient.csproj",
         "packagesPath": "/Users/haseebahmed/.nuget/packages/",
-        "outputPath": "/Users/haseebahmed/Desktop/New Practice/TaskManagement-WebClient/TaskManagement-WebClient/obj/",
+        "outputPath": "/Users/haseebahmed/Desktop/dotNet Practice/TaskManagement/TaskManagement-WebClient/TaskManagement-WebClient/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/haseebahmed/.nuget/NuGet/NuGet.Config"

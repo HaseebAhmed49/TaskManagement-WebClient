@@ -19,5 +19,24 @@ namespace TaskManagement_WebClient.Controllers
             var response = request.Result.Content.ReadAsAsync<List<TaskData>>();
             return View(response.Result);
         }
+
+
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Create(TaskData taskDetails)
+        {
+            if(!ModelState.IsValid)
+            {
+                return View(taskDetails);
+            }
+            var action = "api/Tasks/add-task";
+            var request = ClientHttp.client.PostAsJsonAsync(action, taskDetails);
+            var response = request.Result.Content.ReadAsStringAsync();
+            return RedirectToAction(nameof(Index));
+        }
     }
 }
