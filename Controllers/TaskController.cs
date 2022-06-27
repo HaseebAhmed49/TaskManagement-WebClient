@@ -38,5 +38,54 @@ namespace TaskManagement_WebClient.Controllers
             var response = request.Result.Content.ReadAsStringAsync();
             return RedirectToAction(nameof(Index));
         }
+
+        public IActionResult Edit(int id)
+        {
+            var action = $"api/Tasks/get-task-by-id/{id}";
+            var request = ClientHttp.client.GetAsync(action);
+            var response = request.Result.Content.ReadAsAsync<TaskData>();
+            return (response.Result != null) ? View(response.Result) : View("NotFound");
+        }
+
+        [HttpPost]
+        public IActionResult Edit(int id,TaskData taskDetails)
+        {
+            var action = $"api/Tasks/get-task-by-id/{id}";
+            var request = ClientHttp.client.GetAsync(action);
+            var response = request.Result.Content.ReadAsAsync<TaskData>();
+            if(response.Result!=null && response.Result.id==id)
+            {
+                action = $"api/Tasks/update-task-by-id/{id}";
+                request = ClientHttp.client.PutAsJsonAsync(action, taskDetails);
+                var result = request.Result.Content.ReadAsStringAsync();
+                return RedirectToAction(nameof(Index));
+            }
+            return View("NotFound");
+        }
+
+        public IActionResult Delete(int id)
+        {
+            var action = $"api/Tasks/get-task-by-id/{id}";
+            var request = ClientHttp.client.GetAsync(action);
+            var response = request.Result.Content.ReadAsAsync<TaskData>();
+            return View(response.Result);
+        }
+
+        [HttpPost,ActionName("Delete")]
+        public IActionResult DeleteConfirmed(int id)
+        {
+            var action = $"api/Tasks/get-task-by-id/{id}";
+            var request = ClientHttp.client.GetAsync(action);
+            var response = request.Result.Content.ReadAsAsync<TaskData>();
+            if (response.Result != null && response.Result.id == id)
+            {
+                action = $"api/Tasks/delete-task-by-id/{id}";
+                request = ClientHttp.client.DeleteAsync(action);
+                var result = request.Result.Content.ReadAsStringAsync();
+                return RedirectToAction(nameof(Index));
+            }
+            return View("NotFound");
+        }
+
     }
 }

@@ -27,6 +27,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/haseebahmed/Desktop/dotNet Practice/TaskManagement/TaskManagement-WebClient/TaskManagement-WebClient/Views/Shared/NotFound.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL05vdEZvdW5kLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/haseebahmed/Desktop/dotNet Practice/TaskManagement/TaskManagement-WebClient/TaskManagement-WebClient/Views/Shared/_CreateItem.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19DcmVhdGVJdGVtLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -37,6 +41,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/haseebahmed/Desktop/dotNet Practice/TaskManagement/TaskManagement-WebClient/TaskManagement-WebClient/Views/Task/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVGFzay9DcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/haseebahmed/Desktop/dotNet Practice/TaskManagement/TaskManagement-WebClient/TaskManagement-WebClient/Views/Task/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVGFzay9EZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/haseebahmed/Desktop/dotNet Practice/TaskManagement/TaskManagement-WebClient/TaskManagement-WebClient/Views/Task/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVGFzay9FZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/haseebahmed/Desktop/dotNet Practice/TaskManagement/TaskManagement-WebClient/TaskManagement-WebClient/Views/Task/Index.cshtml]
