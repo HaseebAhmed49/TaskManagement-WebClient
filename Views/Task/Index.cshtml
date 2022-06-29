@@ -4,7 +4,7 @@
     ViewData["Title"] = "Task Details";
 }
 
-<div class="containter-fluid row">
+<div class="containter-fluid row" style="background-color:yellowgreen">
     <div class="col-md-8 offset-2">
         <table class="table">
             <thead>
@@ -13,6 +13,8 @@
                     <th scope="col">@Html.DisplayNameFor(model => model.taskName)</th>
                     <th scope="col">@Html.DisplayNameFor(model => model.startDate)</th>
                     <th scope="col">@Html.DisplayNameFor(model => model.endDate)</th>
+                    <th scope="col">Actions</th>
+                    <br />
                 </tr>
             </thead>
             <tbody>
