@@ -4,9 +4,9 @@
     ViewData["Title"] = "Task Details";
 }
 
-<div class="containter-fluid row" style="background-color:yellowgreen">
+<div class="containter-fluid">
     <div class="col-md-8 offset-2">
-        <table class="table">
+        <table class="table table-bordered">
             <thead>
                 <tr class="text-center">
                     <th scope="col">@Html.DisplayNameFor(model => model.id)</th>
@@ -35,7 +35,6 @@
                     </td>
                     <td class="align-middle text-center">
                         <a class="btn btn-outline-primary" asp-route-id="@item.id" asp-controller="Task" asp-action="Edit"><i class="bi bi-pencil-square"></i>Edit</a>
-                        <a class="btn btn-outline-success" asp-route-id="@item.id" asp-controller="Task" asp-action="Details"><i class="bi bi-eye"></i>Details</a>
                         <a class="btn btn-outline-danger" asp-route-id="@item.id" asp-controller="Task" asp-action="Delete"><i class="bi bi-trash"></i>Delete</a>
                     </td>
                 </tr>
