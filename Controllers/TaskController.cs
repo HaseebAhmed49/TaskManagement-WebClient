@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using TaskManagement_WebClient.Data;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -23,6 +24,10 @@ namespace TaskManagement_WebClient.Controllers
 
         public IActionResult Create()
         {
+            List<TaskStatus> taskStatuses = Enum.GetValues(typeof(TaskStatus))
+                            .Cast<TaskStatus>()
+                            .ToList();
+            ViewBag.TaskStatus = new SelectList(taskStatuses);
             return View();
         }
 
@@ -31,6 +36,10 @@ namespace TaskManagement_WebClient.Controllers
         {
             if(!ModelState.IsValid)
             {
+                List<TaskStatus> taskStatuses = Enum.GetValues(typeof(TaskStatus))
+                .Cast<TaskStatus>()
+                .ToList();
+                ViewBag.TaskStatus = new SelectList(taskStatuses);
                 return View(taskDetails);
             }
             var action = "api/Tasks/add-task";

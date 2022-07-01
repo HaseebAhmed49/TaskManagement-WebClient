@@ -5,14 +5,16 @@
 }
 
 <div class="containter-fluid">
-    <div class="col-md-8 offset-2">
+    <div class="col-md-10 offset-1">
         <table class="table table-bordered">
             <thead>
                 <tr class="text-center">
                     <th scope="col">@Html.DisplayNameFor(model => model.id)</th>
                     <th scope="col">@Html.DisplayNameFor(model => model.taskName)</th>
+                    <th scope="col">@Html.DisplayNameFor(model => model.taskDescription)</th>
                     <th scope="col">@Html.DisplayNameFor(model => model.startDate)</th>
                     <th scope="col">@Html.DisplayNameFor(model => model.endDate)</th>
+                    <th scope="col">@Html.DisplayNameFor(model => model.taskStatus)</th>
                     <th scope="col">Actions</th>
                     <br />
                 </tr>
@@ -28,10 +30,16 @@
                         @Html.DisplayFor(modelItem => item.taskName)
                     </td>
                     <td class="align-middle text-center">
+                        @Html.DisplayFor(modelItem => item.taskDescription)
+                    </td>
+                    <td class="align-middle text-center">
                         @Html.DisplayFor(modelItem => item.startDate)
                     </td>
                     <td class="align-middle text-center">
                         @Html.DisplayFor(modelItem => item.endDate)
+                    </td>
+                    <td class="align-middle text-center">
+                        @Html.DisplayFor(modelItem => item.taskStatus)
                     </td>
                     <td class="align-middle text-center">
                         <a class="btn btn-outline-primary" asp-route-id="@item.id" asp-controller="Task" asp-action="Edit"><i class="bi bi-pencil-square"></i>Edit</a>

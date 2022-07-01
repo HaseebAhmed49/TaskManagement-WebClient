@@ -24,5 +24,22 @@ namespace TaskManagement_WebClient
         [Display(Name = "End Date")]
         [Required(ErrorMessage = "End Date is Required")]
         public DateTime endDate { get; set; }
+
+        [Display(Name ="Task Description")]
+        [Required(ErrorMessage = "Description is Required")]
+        [MinLength(10, ErrorMessage = "Task Description must be at least 10 characters long")]
+        public string? taskDescription { get; set; }
+
+        [Display(Name ="Task Status")]
+        [Required(ErrorMessage ="Select Task Status")]
+        public TaskStatus? taskStatus { get; set; }
+    }
+
+    public enum TaskStatus
+    {
+        NotStarted,
+        Pending,
+        Completed,
+        OnHold
     }
 }

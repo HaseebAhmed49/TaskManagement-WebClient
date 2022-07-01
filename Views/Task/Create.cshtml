@@ -21,6 +21,11 @@
                             <span asp-validation-for="taskName" class="text-danger"></span>
                         </div>
                         <div class="form-group">
+                            <label asp-for="taskDescription" class="control-label"></label>
+                            <input asp-for="taskDescription" class="form-control" />
+                            <span asp-validation-for="taskDescription" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
                             <label asp-for="startDate" class="control-label"></label>
                             <input asp-for="startDate" type="date" class="form-control" />
                             <span asp-validation-for="startDate" class="text-danger"></span>
@@ -29,6 +34,11 @@
                             <label asp-for="endDate" class="control-label"></label>
                             <input asp-for="endDate" type="date" class="form-control" />
                             <span asp-validation-for="endDate" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="taskStatus" class="control-label"></label>
+                            <select asp-for="taskStatus" class="form-control" asp-items="ViewBag.TaskStatus"></select>
+                            <span asp-validation-for="taskStatus" class="text-danger"></span>
                         </div>
                     </div>
                     <div class="form-group">
