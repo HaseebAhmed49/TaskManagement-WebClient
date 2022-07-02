@@ -15,12 +15,21 @@ namespace TaskManagement_WebClient.Controllers
         // GET: /<controller>/
         public IActionResult Index()
         {
-            var action = "api/Tasks/get-all-tasks";
-            var request = ClientHttp.client.GetAsync(action);
-            var response = request.Result.Content.ReadAsAsync<List<TaskData>>();
-            return View(response.Result);
+            try
+            {
+                var action = "api/Tasks/get-all-tasks";
+                var request = ClientHttp.client.GetAsync(action);
+                var response = request.Result.Content.ReadAsAsync<List<TaskData>>();
+                return View(response.Result);
+            }
+            catch(Exception ex)
+            {
+                return View("NotFound");
+            }
+            //}
+            //else
+            //    return View("NotFound");
         }
-
 
         public IActionResult Create()
         {

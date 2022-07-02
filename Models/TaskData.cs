@@ -17,10 +17,12 @@ namespace TaskManagement_WebClient
         [Required(ErrorMessage ="Task Name is Required")]
         public string taskName { get; set; }
 
+        [DataType(DataType.Date)]
         [Display(Name = "Start Date")]
         [Required(ErrorMessage = "Start Date is Required")]
         public DateTime startDate { get; set; }
 
+        [DataType(DataType.Date)]
         [Display(Name = "End Date")]
         [Required(ErrorMessage = "End Date is Required")]
         public DateTime endDate { get; set; }
